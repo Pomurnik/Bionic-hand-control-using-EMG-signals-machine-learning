@@ -190,11 +190,11 @@ signals = data_test(38:382:end, :);
 
 %% Export data to disk
 
-%save('signals_model_simulink', 'mdl', 'signals');
+save('signals_model_simulink', 'mdl', 'signals');
 
 %% Save models and data
 
-% save('Functions/model_error', 'mdl_ann', 'mdl_ann_pca', 'mdl_knn', 'mdl_knn_pca', 'mdl_svm', 'mdl_svm_pca', ...
-%     'all_data_normalized', 'all_data_pca', 'target_label', 'y_label', 'num_neurons', 'num_neurons_pca');
+save('Functions/model_error', 'mdl_ann', 'mdl_ann_pca', 'mdl_knn', 'mdl_knn_pca', 'mdl_svm', 'mdl_svm_pca', ...
+    'all_data_normalized', 'all_data_pca', 'target_label', 'y_label', 'num_neurons', 'num_neurons_pca');
 
 toc
